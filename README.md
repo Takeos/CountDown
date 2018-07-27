@@ -2,6 +2,8 @@
 倒计时
 
 
+![avatar](https://github.com/Takeos/CountDown/blob/master/demo.gif)
+
 
 ```
 var c = new CountDown('2012/12/12 12:12:12'); //传入结束的时间
