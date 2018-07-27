@@ -26,8 +26,11 @@ c.end(function(){
 
 
 >例子
+
+```
 new CountDown(50000).run(e=>{
     console.log(e)
 }).end(()=>{
     console.log('end')
 });
+```
