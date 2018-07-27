@@ -23,3 +23,11 @@ c.end(function(){
     //倒计时结束
 });
 ```
+
+
+>例子
+new CountDown(50000).run(e=>{
+    console.log(e)
+}).end(()=>{
+    console.log('end')
+});
