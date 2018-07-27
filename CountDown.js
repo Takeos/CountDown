@@ -1,13 +1,12 @@
 window.CountDown= (function(w,d){
     function setTwo(num){ return num<10 ? ('0'+num) : (''+num); };
     function countdown(t){
-        if(t instanceof Array){
-            this.time =new Date().getTime()+ (new Date(t[1]).getTime() - new Date(t[0]).getTime()); 
-        }else{
-            this.time =/\//gi.test(t.toString()) ? (new Date(t).getTime()) : ( new Date().getTime()+parseInt(t)); 
-        }
+        if(t instanceof Array)
+            this.time = new Date().getTime()+ (new Date(t[1]).getTime() - new Date(t[0]).getTime()); 
+        else
+            this.time = /\//gi.test(t.toString()) ? (new Date(t).getTime()) : ( new Date().getTime()+parseInt(t)); 
     };
-    countdown.prototype={
+    countdown.prototype = {
         timeOut : function (fn,t) {
             var _now = new Date().getTime();
             var count = Math.round((this.time - _now)/1000);
