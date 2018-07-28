@@ -34,7 +34,6 @@ window.CountDown= (function(w,d){
             this.endFn = fn;
         },
         run : function(fn,t){
-            this.stopOff = false
             this.timeOut(fn,t);
             return this
         }
